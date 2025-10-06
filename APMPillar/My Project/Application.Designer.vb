@@ -28,7 +28,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = APM
+            Me.MainForm = FormUtama
         End Sub
     End Class
 End Namespace

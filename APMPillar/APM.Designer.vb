@@ -5,59 +5,117 @@ Partial Class APM
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BtnCheckIn = New System.Windows.Forms.Button()
-        Me.LabelTitle = New System.Windows.Forms.Label()
-        Me.PanelFrista = New System.Windows.Forms.Panel()
-        Me.HeaderLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.SuspendLayout()
-        '
-        'HeaderLayout 
-        '
-        Me.HeaderLayout.ColumnCount = 3
-        Me.HeaderLayout.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0!))
-        Me.HeaderLayout.ColumnStyles.Add(New ColumnStyle(SizeType.AutoSize))
-        Me.HeaderLayout.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0!))
-        Me.HeaderLayout.RowCount = 2
-        Me.HeaderLayout.RowStyles.Add(New RowStyle(SizeType.AutoSize))
-        Me.HeaderLayout.RowStyles.Add(New RowStyle(SizeType.AutoSize))
-        Me.HeaderLayout.Dock = DockStyle.Top
-        Me.HeaderLayout.Padding = New Padding(0, 15, 0, 15)
-        Me.HeaderLayout.GrowStyle = TableLayoutPanelGrowStyle.FixedSize
-        '
-        'LabelTitle 
-        '
-        Me.LabelTitle.AutoSize = True
-        Me.LabelTitle.Text = "SILAHKAN KLIK UNTUK VERIFIKASI WAJAH"
-        Me.LabelTitle.TextAlign = ContentAlignment.MiddleCenter
-        Me.LabelTitle.Anchor = AnchorStyles.None
-        Me.HeaderLayout.Controls.Add(Me.LabelTitle, 1, 0)
-        '
-        'BtnCheckIn 
-        '
-        Me.BtnCheckIn.Size = New Size(457, 59)
-        Me.BtnCheckIn.Text = "Check In (FRISTA)"
-        Me.BtnCheckIn.UseVisualStyleBackColor = True
-        Me.BtnCheckIn.Anchor = AnchorStyles.None
-        Me.HeaderLayout.Controls.Add(Me.BtnCheckIn, 1, 1)
-        '
-        'PanelFrista 
-        '
-        Me.PanelFrista.Dock = DockStyle.Fill
-        '
-        'APM (form)
-        '
-        Me.AutoScaleDimensions = New SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = AutoScaleMode.Font
-        Me.ClientSize = New Size(1680, 791)
-        Me.Controls.Add(Me.PanelFrista)
-        Me.Controls.Add(Me.HeaderLayout)
-        Me.Name = "APM"
-        Me.Text = "APM"
-        Me.ResumeLayout(False)
+        BtnCheckIn = New Button()
+        LabelTitle = New Label()
+        PanelFrista = New Panel()
+        HeaderLayout = New TableLayoutPanel()
+        VerifikasiQRCode = New Button()
+        BtnKembali = New Button()
+        HeaderLayout.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' BtnCheckIn
+        ' 
+        BtnCheckIn.Anchor = AnchorStyles.None
+        BtnCheckIn.BackColor = SystemColors.Highlight
+        BtnCheckIn.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnCheckIn.ForeColor = SystemColors.ButtonHighlight
+        BtnCheckIn.Location = New Point(675, 115)
+        BtnCheckIn.Margin = New Padding(3, 4, 3, 4)
+        BtnCheckIn.Name = "BtnCheckIn"
+        BtnCheckIn.Size = New Size(510, 79)
+        BtnCheckIn.TabIndex = 1
+        BtnCheckIn.Text = "Verifikasi (FRISTA)"
+        BtnCheckIn.UseVisualStyleBackColor = False
+        ' 
+        ' LabelTitle
+        ' 
+        LabelTitle.Anchor = AnchorStyles.None
+        LabelTitle.AutoSize = True
+        LabelTitle.Font = New Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTitle.ForeColor = SystemColors.Highlight
+        LabelTitle.Location = New Point(606, 20)
+        LabelTitle.Name = "LabelTitle"
+        LabelTitle.Size = New Size(648, 60)
+        LabelTitle.TabIndex = 0
+        LabelTitle.Text = "ANJUNGAN PASIEN MANDIRI"
+        LabelTitle.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PanelFrista
+        ' 
+        PanelFrista.Dock = DockStyle.Fill
+        PanelFrista.Location = New Point(0, 250)
+        PanelFrista.Margin = New Padding(3, 4, 3, 4)
+        PanelFrista.Name = "PanelFrista"
+        PanelFrista.Size = New Size(1920, 805)
+        PanelFrista.TabIndex = 0
+        ' 
+        ' HeaderLayout
+        ' 
+        HeaderLayout.ColumnCount = 3
+        HeaderLayout.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 47.6303329F))
+        HeaderLayout.ColumnStyles.Add(New ColumnStyle())
+        HeaderLayout.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 52.3696671F))
+        HeaderLayout.Controls.Add(LabelTitle, 1, 0)
+        HeaderLayout.Controls.Add(VerifikasiQRCode, 2, 1)
+        HeaderLayout.Controls.Add(BtnCheckIn, 1, 1)
+        HeaderLayout.Controls.Add(BtnKembali, 0, 1)
+        HeaderLayout.Dock = DockStyle.Top
+        HeaderLayout.GrowStyle = TableLayoutPanelGrowStyle.FixedSize
+        HeaderLayout.Location = New Point(0, 0)
+        HeaderLayout.Margin = New Padding(3, 4, 3, 4)
+        HeaderLayout.Name = "HeaderLayout"
+        HeaderLayout.Padding = New Padding(0, 20, 0, 20)
+        HeaderLayout.RowCount = 2
+        HeaderLayout.RowStyles.Add(New RowStyle())
+        HeaderLayout.RowStyles.Add(New RowStyle())
+        HeaderLayout.Size = New Size(1920, 250)
+        HeaderLayout.TabIndex = 1
+        ' 
+        ' VerifikasiQRCode
+        ' 
+        VerifikasiQRCode.Anchor = AnchorStyles.None
+        VerifikasiQRCode.BackColor = SystemColors.Highlight
+        VerifikasiQRCode.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        VerifikasiQRCode.ForeColor = SystemColors.ButtonHighlight
+        VerifikasiQRCode.Location = New Point(1333, 115)
+        VerifikasiQRCode.Margin = New Padding(3, 4, 3, 4)
+        VerifikasiQRCode.Name = "VerifikasiQRCode"
+        VerifikasiQRCode.Size = New Size(510, 79)
+        VerifikasiQRCode.TabIndex = 2
+        VerifikasiQRCode.Text = "Verifikasi (FINGER)"
+        VerifikasiQRCode.UseVisualStyleBackColor = False
+        ' 
+        ' BtnKembali
+        ' 
+        BtnKembali.BackColor = SystemColors.ControlLight
+        BtnKembali.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnKembali.Location = New Point(3, 83)
+        BtnKembali.Name = "BtnKembali"
+        BtnKembali.Size = New Size(246, 67)
+        BtnKembali.TabIndex = 3
+        BtnKembali.Text = "<< KEMBALI"
+        BtnKembali.UseVisualStyleBackColor = False
+        ' 
+        ' APM
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1920, 1055)
+        Controls.Add(PanelFrista)
+        Controls.Add(HeaderLayout)
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "APM"
+        Text = "ANJUNGAN PASIEN MANDIRI"
+        HeaderLayout.ResumeLayout(False)
+        HeaderLayout.PerformLayout()
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents BtnCheckIn As Button
     Friend WithEvents LabelTitle As Label
     Friend WithEvents PanelFrista As Panel
     Friend WithEvents HeaderLayout As TableLayoutPanel
+    Friend WithEvents VerifikasiQRCode As Button
+    Friend WithEvents BtnKembali As Button
 End Class
