@@ -17,13 +17,13 @@ Partial Class APM
         ' BtnCheckIn
         ' 
         BtnCheckIn.Anchor = AnchorStyles.None
-        BtnCheckIn.BackColor = SystemColors.Highlight
+        BtnCheckIn.BackColor = SystemColors.ControlLight
         BtnCheckIn.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnCheckIn.ForeColor = SystemColors.ButtonHighlight
-        BtnCheckIn.Location = New Point(675, 115)
+        BtnCheckIn.ForeColor = SystemColors.ActiveCaptionText
+        BtnCheckIn.Location = New Point(675, 107)
         BtnCheckIn.Margin = New Padding(3, 4, 3, 4)
         BtnCheckIn.Name = "BtnCheckIn"
-        BtnCheckIn.Size = New Size(510, 79)
+        BtnCheckIn.Size = New Size(510, 96)
         BtnCheckIn.TabIndex = 1
         BtnCheckIn.Text = "Verifikasi (FRISTA)"
         BtnCheckIn.UseVisualStyleBackColor = False
@@ -75,20 +75,20 @@ Partial Class APM
         ' VerifikasiQRCode
         ' 
         VerifikasiQRCode.Anchor = AnchorStyles.None
-        VerifikasiQRCode.BackColor = SystemColors.Highlight
+        VerifikasiQRCode.BackColor = SystemColors.ControlLight
         VerifikasiQRCode.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        VerifikasiQRCode.ForeColor = SystemColors.ButtonHighlight
-        VerifikasiQRCode.Location = New Point(1333, 115)
+        VerifikasiQRCode.ForeColor = SystemColors.ActiveCaptionText
+        VerifikasiQRCode.Location = New Point(1333, 109)
         VerifikasiQRCode.Margin = New Padding(3, 4, 3, 4)
         VerifikasiQRCode.Name = "VerifikasiQRCode"
-        VerifikasiQRCode.Size = New Size(510, 79)
+        VerifikasiQRCode.Size = New Size(510, 92)
         VerifikasiQRCode.TabIndex = 2
         VerifikasiQRCode.Text = "Verifikasi (FINGER)"
         VerifikasiQRCode.UseVisualStyleBackColor = False
         ' 
         ' BtnKembali
         ' 
-        BtnKembali.BackColor = SystemColors.ControlLight
+        BtnKembali.BackColor = SystemColors.ButtonHighlight
         BtnKembali.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnKembali.Location = New Point(3, 83)
         BtnKembali.Name = "BtnKembali"

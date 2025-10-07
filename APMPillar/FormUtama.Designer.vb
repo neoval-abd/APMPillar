@@ -32,38 +32,37 @@ Partial Class FormUtama
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 36.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(448, 77)
+        Label1.Location = New Point(431, 77)
         Label1.Name = "Label1"
-        Label1.Size = New Size(881, 81)
+        Label1.Size = New Size(1030, 81)
         Label1.TabIndex = 0
-        Label1.Text = "ANJUNGAN PASIEN MANDIRI"
+        Label1.Text = "ANJUNGAN MANDIRI PASIEN BPJS"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 25.8000011F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(678, 158)
+        Label2.Location = New Point(733, 158)
         Label2.Name = "Label2"
-        Label2.Size = New Size(393, 60)
+        Label2.Size = New Size(0, 60)
         Label2.TabIndex = 1
-        Label2.Text = "BPJS KESEHATAN"
         ' 
         ' BtnPasienBaru
         ' 
-        BtnPasienBaru.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnPasienBaru.Location = New Point(458, 425)
+        BtnPasienBaru.Font = New Font("Segoe UI", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnPasienBaru.Location = New Point(480, 425)
         BtnPasienBaru.Name = "BtnPasienBaru"
-        BtnPasienBaru.Size = New Size(361, 111)
+        BtnPasienBaru.Size = New Size(399, 111)
         BtnPasienBaru.TabIndex = 2
         BtnPasienBaru.Text = "PASIEN BARU"
         BtnPasienBaru.UseVisualStyleBackColor = True
         ' 
         ' BtnPasienKontrol
         ' 
-        BtnPasienKontrol.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        BtnPasienKontrol.Location = New Point(979, 425)
+        BtnPasienKontrol.Font = New Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnPasienKontrol.Location = New Point(1005, 425)
         BtnPasienKontrol.Name = "BtnPasienKontrol"
-        BtnPasienKontrol.Size = New Size(330, 111)
+        BtnPasienKontrol.Size = New Size(399, 111)
         BtnPasienKontrol.TabIndex = 3
         BtnPasienKontrol.Text = "PASIEN KONTROL"
         BtnPasienKontrol.UseVisualStyleBackColor = True
@@ -72,7 +71,7 @@ Partial Class FormUtama
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1924, 1055)
+        ClientSize = New Size(1920, 1055)
         Controls.Add(BtnPasienKontrol)
         Controls.Add(BtnPasienBaru)
         Controls.Add(Label2)
