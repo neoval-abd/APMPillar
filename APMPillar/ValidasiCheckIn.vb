@@ -10,7 +10,7 @@
 
     Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
         Try
-            ' Tutup semua proses FRISTA jika masih terbuka
+            ' Tutup 
             If launchedProcess IsNot Nothing AndAlso Not launchedProcess.HasExited Then
                 launchedProcess.Kill()
             End If
@@ -19,15 +19,29 @@
             Dim frmUtama As New FormUtama()
             frmUtama.Show()
 
-            ' Tutup form APM saat ini
+            ' Tutup form 
+            Me.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("Gagal kembali : " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub BtnBelumDaftar_Click(sender As Object, e As EventArgs) Handles BtnBelumDaftar.Click
+        Try
+            If launchedProcess IsNot Nothing AndAlso Not launchedProcess.HasExited Then
+                launchedProcess.Kill()
+            End If
+
+            ' Buka form 
+            Dim baruDaftar As New BaruDaftar()
+            baruDaftar.Show()
+
+            ' Tutup form 
             Me.Close()
 
         Catch ex As Exception
             MessageBox.Show("Gagal kembali ke menu utama: " & ex.Message)
         End Try
-    End Sub
-
-    Private Sub ValidasiCheckIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

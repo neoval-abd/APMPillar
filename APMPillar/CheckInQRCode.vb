@@ -19,8 +19,8 @@
             End If
 
             ' Buka form utama
-            Dim validasiCheckIn As New ValidasiCheckIn()
-            validasiCheckIn.Show()
+            Dim baruDaftar As New BaruDaftar()
+            baruDaftar.Show()
 
             ' Tutup form APM saat ini
             Me.Close()
